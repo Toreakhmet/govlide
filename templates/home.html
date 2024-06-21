@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>GovGlide</title>
+</head>
+<body>
+    {% include "includes/header.html" %}
+    <section class="first_page">
+        <div class="main_content">
+            <ul class="links">
+                <li><a href="#">О нас</a></li>
+                <li class="contact_information"><a href="#">Контактная информация</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="content">
+                <div class="group_1">
+                    <div class="text_block">
+                        <h1 class="first_word"></h1>
+                        <h1  class="second_word"></h1>
+                        <h1 class="theard_word"></h1>
+                    </div>    
+                    <img src="{% static 'images/coob.png' %}" alt="coob" class="coob">
+                    
+                
+            </div>
+        </div>
+        
+        <div class="image_button">
+            <img src="{% static 'images/arrow.png' %}" alt="arrow">
+            <button class="order_button"><a href="#page_two_two" style="text-decoration: none; color: white;">заказать проект</a></button>
+
+            
+        </div>
+    </div>
+    </section>
+    <section class="page_two" id="page_two_two">
+        <div class="page_two_content_one">
+            <div>
+                <img src="{% static 'images/bill.png' %}" alt="">
+            </div>
+            <div class="union">
+                <div class="first_citata"><span class="kovichka"> "</span>
+                    Если вас нет в Интернете, вас нет в бизнесе
+                    <span class="kovichka" >"</span>
+            </div>
+                <div class="author">
+                    Билл Гейтс
+                </div>
+            </div>
+        </div>
+        <div class="page_two_content_two">
+
+            <div class="text_for_page_two">
+                оставьте заявку на создание сайта
+            </div>
+            <div class="form">
+                <form action="{% url 'forms' %}" method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="form_input">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="phone" name="number" placeholder="Tелефон*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" placeholder="E-mail*" required>
+                        </div>
+                    </div>
+                   
+                    <button type="submit" class="button_form">Отправить</button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <section class="tipa_footer">
+        <div class="text_tipa_footer">
+            Мы во всемирной паутине
+        </div>
+        <div class="grid">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+
+            <div class="circle"><img src="path_to_discord_icon.png" alt="Discord"></div>
+            <div class="circle"><img src="path_to_whatsapp_icon.png" alt="WhatsApp"></div>
+          </div>
+          
+
+    </section>
+    <script src="{% static 'js/index.js' %}">
+
+    </script>
+</body>
+</html>

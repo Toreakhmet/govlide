@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    background-color: #000;
+    font-size: 22px;
+    margin-top: 43px;
+    gap: 104px;
+    
+}
+
+.links li {
+    margin-left: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.first_page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text_block h1 {
+    
+    background-color: #00ff00;
+   
+}
+
+
+.order_button {
+    padding: 10px 20px;
+    font-family: "Roboto",sans-serif;
+    font-size: 24px;
+    box-shadow: inset 10px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #2AA4E8;
+    color: #fff;
+    border: none;
+    border-radius: 23.5px;
+    cursor: pointer;
+    width: 269px;
+    
+    font-weight: 500;
+
+    height: 47px;
+
+}
+
+.order_button:hover {
+    background-color: #0057e7;
+}
+
+.group_1 {
+    position: relative;
+    width: 100%; /* Ширина на всю ширину экрана */
+    height: 515.64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.first_word , .second_word,.theard_word{
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.first_word{
+    width: 838px;
+    height: 146px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: start;
+    margin-top: 108px;
+    
+}
+
+.second_word{
+    width: 898px;
+    margin-top: 71px;
+    margin-left: 506px;
+}
+.theard_word{
+    width:619px;
+
+    margin-left: 1136px;
+}
+
+
+.coob{
+    
+ width: 100px;
+ margin-bottom: 37px;   
+}
+
+.image_button{
+    display: flex;
+    margin-top: 220px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_two_content_one{
+    display: flex;
+    flex-direction: row;
+    background-color: #9BE1FF;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.union{
+    font-weight: 200;
+    font-size: 64px;
+    margin-top: 88px;
+    margin-left: 44px;
+    
+}
+.author{
+    margin-top: 80px;
+}
+.text_for_page_two{
+    font-size: 128px;
+    width: 1051px;
+    font-weight: 400;
+    margin-left: 72px;
+    font-family: "Manrope", sans-serif;
+}
+.page_two_content_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-bottom: 13px;
+}
+
+.page_two{
+    
+}
+.form_input{
+    width: 399px;
+    height: 311px;
+    background-color: #8A2BE2; /* Фиолетовый фон кнопки */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23.5px;
+    margin-left: 155px;
+    margin-top: 60px;
+}
+.input-group input {
+    width: 335px;
+    height: 59px;
+    margin: 10px 0;
+    border-radius: 23.5px; /* Округление углов поля ввода */
+    border: none;
+    outline: none;
+    font-size: 32px;
+    padding-left: 26px;
+    margin-top: 31px;
+    box-shadow: inset 10px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+button:hover {
+    background-color: #7a22c2; /* Темно-фиолетовый при наведении */
+}
+.button_form{
+    padding: 10px 20px;
+    font-family: "Roboto",sans-serif;
+    font-size: 24px;
+    box-shadow: inset 10px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #2AA4E8;
+    color: #fff;
+    border: none;
+    border-radius: 23.5px;
+    cursor: pointer;
+    width: 269px;
+    margin-left: 210px;
+    
+    margin-top: 20px;
+    font-weight: 500;
+
+    height: 47px;
+
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px; /* Adjust based on total width */
+    position: relative;
+    margin-left: 176px
+  }
+  
+  .circle {
+    width: 111px; /* Circle size */
+    height: 111px;
+    border-radius: 50%;
+    background-color: red;
+    margin: -5px; /* Adjust to control overlap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+  }
+  
+  .circle img {
+    width: 48px; /* Adjust based on icon size */
+    height: 48px;
+  }
+  
+  /* Example of a larger circle for the Discord icon */
+  .circle.large {
+    width: 96px;
+    height: 96px;
+  }
+  
+  /* Adjust positioning for individual circles if necessary */
+  .circle:nth-child(1) { /* example to position first child */
+    z-index: 1; /* Adjust z-index to manage overlap */
+  }
+  
+  .tipa_footer{
+
+    display: flex;
+    align-items: center;
+    background-color: #9BE1FF;
+    justify-content: center;
+    padding-top: 55px;
+  }
+  .text_tipa_footer{
+    width: 330px;
+    height: 270px;
+    color: black;
+    background-color: white;
+    font-size: 64px;
+    margin-left: 251px;
+    box-shadow: 5px 5px px 150px #888888;
+  }

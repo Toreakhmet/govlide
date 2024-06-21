@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мы во всемирной паутине</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a1d5f0;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #a1d5f0;
+        }
+        .text-box {
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            font-size: 24px;
+            line-height: 1.5;
+            color: black;
+            font-family: Arial, sans-serif;
+            box-shadow: 20px 20px 0 0 #ed6f5e;
+        }
+        .text-box:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid #ed6f5e;
+        }
+        .text-box:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-right: 20px solid #ed6f5e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-box">
+            Мы во<br>всемирной<br>паутине
+        </div>
+    </div>
+</body>
+</html>
